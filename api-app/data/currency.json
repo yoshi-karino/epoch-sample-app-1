@@ -6,9 +6,5 @@
     "USD": {
         "symbol"    :   "$",
         "formatter" :   "{symbol} {price:,.2f} (Tax Included)"
-    },
-    "EUR": {
-        "symbol"    :   "€",
-        "formatter" :   "{symbol} {price:,.2f}"
     }
 }
