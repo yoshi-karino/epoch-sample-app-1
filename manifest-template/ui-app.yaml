@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       name: ui-app
-  replicas: {{ replicas }}
+  replicas: {{ param01 }}
   template:
     metadata:
       labels:
@@ -40,7 +40,7 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: {{ port_no_active }}
+    nodePort: {{ param02 }}
   selector:
     name: ui-app
 
@@ -58,6 +58,6 @@ spec:
     port: 8000
     protocol: TCP
     targetPort: 8000
-    nodePort: {{ port_no_preview }}
+    nodePort: {{ param03 }}
   selector:
     name: ui-app
